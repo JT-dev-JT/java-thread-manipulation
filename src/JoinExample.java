@@ -10,6 +10,8 @@ public class JoinExample {
         Thread thread = new Thread(runnable);
         thread.setDaemon(true);
         thread.start();
+
+        //join the thread
         try{
             thread.join();
         }catch (InterruptedException ex){
